@@ -12,6 +12,7 @@ data/**
 !data/bank-full.csv
 reports/**
 !reports/figures/.gitkeep
+!reports/figures/roc_curve.png
 models/**
 checkpoints/**
 outputs/**

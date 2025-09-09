@@ -1,5 +1,7 @@
 # Bank Marketing: Term Deposit Classifier
 
+![Python](https://img.shields.io/badge/Python-3.11+-blue) ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-ff7f0e) ![License](https://img.shields.io/badge/License-MIT-green)
+
 Predicts whether a client subscribes to a term deposit using the UCI Bank Marketing dataset. The project demonstrates clean preprocessing, baseline modelling, cross-validated tuning, and clear evaluation for imbalanced data.
 
 - **Problem:** Binary classification of term-deposit subscription  
@@ -10,15 +12,20 @@ Predicts whether a client subscribes to a term deposit using the UCI Bank Market
 
 **Result:** Tuned logistic regression achieved ROC AUC ≈ **0.90**, balancing precision and recall under class imbalance.  
 
+![ROC Curve](reports/figures/roc_curve.png)
+
 ---
 
 ## Project structure
 ```
 notebooks/
-    analysis.ipynb    # narrative analysis and results
-data/                # place bank-full.csv here (gitignored)
-reports/figures/     # saved plots (gitignored)
-src/                 # optional utilities if modularised
+    analysis.ipynb        # narrative analysis and results
+data/
+    bank-full.csv         # dataset (tracked)
+reports/
+    figures/
+        roc_curve.png     # ROC AUC plot (tracked)
+src/                      # optional utilities if modularised
 ```
 
 ---
@@ -36,7 +43,7 @@ src/                 # optional utilities if modularised
 
 2. **Data**
    - Download the [UCI Bank Marketing dataset](https://archive.ics.uci.edu/dataset/222/bank+marketing)  
-   - Place `bank-full.csv` at `data/bank-full.csv`
+   - Place `bank-full.csv` at `data/bank-full.csv` (already included here for convenience)
 
 3. **Run the notebook**
    - Open `notebooks/analysis.ipynb`  
@@ -55,7 +62,7 @@ src/                 # optional utilities if modularised
 ---
 
 ## Tips for GitHub
-- `data/` and `reports/` are gitignored — keep raw data out of Git.  
+- Only specific assets are tracked (e.g., `data/bank-full.csv`, `reports/figures/roc_curve.png`); other large/raw artifacts remain ignored.  
 - For cleaner commits, consider `nbstripout` to strip cell outputs before pushing.  
 - If storing large datasets, use Git LFS.  
 
