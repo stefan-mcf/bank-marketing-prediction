@@ -1,16 +1,57 @@
-# environments
+# Python environments
 .venv/
 venv/
+env/
+.python-version
+.env
+.env.*
 
 # data and artifacts
 data/**
 !data/.gitkeep
 reports/**
 !reports/figures/.gitkeep
+models/**
+checkpoints/**
+outputs/**
+tmp/
+.cache/
+*.log
+logs/
 
 # notebooks
 .ipynb_checkpoints/
+profile_default/
 
 # OS
 .DS_Store
 .gh_token
+
+# Python cache/bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Packaging/build
+build/
+dist/
+downloads/
+wheels/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Test/coverage/type-checking caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Editors/IDE
+.idea/
+.vscode/
+.history/
+*.swp
