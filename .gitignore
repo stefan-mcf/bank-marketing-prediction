@@ -9,6 +9,7 @@ env/
 # data and artifacts
 data/**
 !data/.gitkeep
+!data/bank-full.csv
 reports/**
 !reports/figures/.gitkeep
 models/**
