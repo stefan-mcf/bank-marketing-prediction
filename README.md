@@ -10,7 +10,9 @@ Predicts whether a client subscribes to a term deposit using the UCI Bank Market
 - **Metrics:** Accuracy, ROC AUC, Precision, Recall, F1 Score, Confusion Matrix  
 - **Why it matters:** In banking and fintech, optimising contact strategy reduces cost and customer fatigue. Calibrated probabilities and threshold selection support smarter outreach decisions.  
 
-**Result:** Tuned logistic regression achieved ROC AUC ≈ **0.90**, balancing precision and recall under class imbalance.  
+## Results
+
+Tuned logistic regression achieved ROC AUC ≈ **0.90**, balancing precision and recall under class imbalance.
 
 ![ROC Curve](reports/figures/roc_curve.png)
 
@@ -88,4 +90,3 @@ This project establishes a strong baseline and tuned models, but there are clear
 - **Model extensions** — explore tree-based ensembles (Random Forest, XGBoost) or non-linear classifiers (SVM) for further gains  
 - **Deployment** — package the pipeline with `scikit-learn`'s `Pipeline` and export for API or batch inference  
 
-These steps reflect real-world considerations in applied ML, especially in imbalanced domains like banking and fintech.
