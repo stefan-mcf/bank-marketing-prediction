@@ -63,13 +63,6 @@ src/                      # optional utilities if modularised
 
 ---
 
-## Tips for GitHub
-- Only specific assets are tracked (e.g., `data/bank-full.csv`, `reports/figures/roc_curve.png`); other large/raw artifacts remain ignored.  
-- For cleaner commits, consider `nbstripout` to strip cell outputs before pushing.  
-- If storing large datasets, use Git LFS.  
-
----
-
 ## Example usage
 ```python
 import pandas as pd
