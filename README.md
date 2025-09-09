@@ -53,13 +53,15 @@ src/                      # optional utilities if modularised
 
 ---
 
-## Reproducibility notes
+## Reproducibility & Next Steps
 - The notebook uses consistent preprocessing pipelines and stratified CV for fair evaluation under class imbalance.  
 - Paths are relative (`data/bank-full.csv`, `reports/figures/`) so the project works when cloned without extra setup.  
 - For extensions, you can add:
   - **Threshold tuning** for different business trade-offs  
   - **Cost-sensitive evaluation** if false positives/negatives have unequal impact  
   - **Probability calibration** for downstream decision systems  
+  - **Model extensions** — explore tree-based ensembles (Random Forest, XGBoost) or non-linear classifiers (SVM) for further gains  
+  - **Deployment** — package the pipeline with `scikit-learn`'s `Pipeline` and export for API or batch inference  
 
 ---
 
@@ -72,14 +74,3 @@ df = pd.read_csv("data/bank-full.csv", sep=";")
 print(df.shape)
 ```
 ---
-
-## Next Steps
-
-This project establishes a strong baseline and tuned models, but there are clear directions for extension:
-
-- **Threshold tuning** — adjust decision thresholds to balance precision and recall for different business needs  
-- **Cost-sensitive evaluation** — incorporate unequal costs of false positives vs false negatives into model selection  
-- **Probability calibration** — improve probability estimates with Platt scaling or isotonic regression  
-- **Model extensions** — explore tree-based ensembles (Random Forest, XGBoost) or non-linear classifiers (SVM) for further gains  
-- **Deployment** — package the pipeline with `scikit-learn`'s `Pipeline` and export for API or batch inference  
-
