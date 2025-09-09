@@ -1,0 +1,15 @@
+# environments
+.venv/
+venv/
+
+# data and artifacts
+data/**
+!data/.gitkeep
+reports/**
+!reports/figures/.gitkeep
+
+# notebooks
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
