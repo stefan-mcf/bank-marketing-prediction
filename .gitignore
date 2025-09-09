@@ -11,6 +11,7 @@ data/**
 !data/.gitkeep
 !data/bank-full.csv
 reports/**
+!reports/figures/
 !reports/figures/.gitkeep
 !reports/figures/roc_curve.png
 models/**
